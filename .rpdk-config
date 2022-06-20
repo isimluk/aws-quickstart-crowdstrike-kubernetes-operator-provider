@@ -1,0 +1,23 @@
+{
+    "artifact_type": "RESOURCE",
+    "typeName": "CrowdStrike::Kubernetes::Operator",
+    "language": "go",
+    "runtime": "go1.x",
+    "entrypoint": "handler",
+    "testEntrypoint": "handler",
+    "settings": {
+        "version": false,
+        "subparser_name": "go",
+        "verbose": 0,
+        "force": false,
+        "type_name": "CrowdStrike::Kubernetes::Operator",
+        "artifact_type": "RESOURCE",
+        "endpoint_url": null,
+        "region": null,
+        "target_schemas": [],
+        "import_path": "github.com/isimluk/aws-quickstart-crowdstrike-kubernetes-operator-provider",
+        "language": "go",
+        "protocolVersion": "2.0.0",
+        "pluginVersion": "2.0.4"
+    }
+}
