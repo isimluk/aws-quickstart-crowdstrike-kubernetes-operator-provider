@@ -50,10 +50,10 @@
             "type": "string",
             "pattern": "^[A-Z]{3,5}[0-9]{8}-[0-9]{4}$"
         },
-        "Title": {
-            "description": "The title of the TPS report is a mandatory element.",
+        "EKSClusterName": {
+            "description": "Name of the EKS QuickStart Cluster",
             "type": "string",
-            "minLength": 20,
+            "minLength": 1,
             "maxLength": 250
         },
         "CoverSheetIncluded": {
@@ -99,7 +99,7 @@
     "additionalProperties": false,
     "required": [
         "TestCode",
-        "Title"
+        "EKSClusterName"
     ],
     "readOnlyProperties": [
         "/properties/TPSCode"

@@ -12,7 +12,7 @@ To declare this entity in your AWS CloudFormation template, use the following sy
 {
     "Type" : "CrowdStrike::Kubernetes::Operator",
     "Properties" : {
-        "<a href="#title" title="Title">Title</a>" : <i>String</i>,
+        "<a href="#eksclustername" title="EKSClusterName">EKSClusterName</a>" : <i>String</i>,
         "<a href="#coversheetincluded" title="CoverSheetIncluded">CoverSheetIncluded</a>" : <i>Boolean</i>,
         "<a href="#duedate" title="DueDate">DueDate</a>" : <i>String</i>,
         "<a href="#approvaldate" title="ApprovalDate">ApprovalDate</a>" : <i>String</i>,
@@ -30,7 +30,7 @@ To declare this entity in your AWS CloudFormation template, use the following sy
 <pre>
 Type: CrowdStrike::Kubernetes::Operator
 Properties:
-    <a href="#title" title="Title">Title</a>: <i>String</i>
+    <a href="#eksclustername" title="EKSClusterName">EKSClusterName</a>: <i>String</i>
     <a href="#coversheetincluded" title="CoverSheetIncluded">CoverSheetIncluded</a>: <i>Boolean</i>
     <a href="#duedate" title="DueDate">DueDate</a>: <i>String</i>
     <a href="#approvaldate" title="ApprovalDate">ApprovalDate</a>: <i>String</i>
@@ -45,15 +45,15 @@ Properties:
 
 ## Properties
 
-#### Title
+#### EKSClusterName
 
-The title of the TPS report is a mandatory element.
+Name of the EKS QuickStart Cluster
 
 _Required_: Yes
 
 _Type_: String
 
-_Minimum_: <code>20</code>
+_Minimum_: <code>1</code>
 
 _Maximum_: <code>250</code>
 
