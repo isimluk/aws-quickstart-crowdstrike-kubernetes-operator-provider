@@ -11,7 +11,6 @@ type Model struct {
 	ApprovalDate       *string  `json:",omitempty"`
 	Memo               *Memo    `json:",omitempty"`
 	SecondCopyOfMemo   *Memo    `json:",omitempty"`
-	TestCode           *string  `json:",omitempty"`
 	Authors            []string `json:",omitempty"`
 	Tags               []Tag    `json:",omitempty"`
 }
