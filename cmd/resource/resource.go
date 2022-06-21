@@ -1,6 +1,7 @@
 package resource
 
 import (
+	"log"
 	"errors"
 
 	"github.com/aws-cloudformation/cloudformation-cli-go-plugin/cfn/handler"
@@ -9,6 +10,7 @@ import (
 
 // Create handles the Create event from the Cloudformation service.
 func Create(req handler.Request, prevModel *Model, currentModel *Model) (handler.ProgressEvent, error) {
+    log.Println("Attempting to create...",)
     // Add your code here:
     // * Make API calls (use req.Session)
     // * Mutate the model
@@ -32,6 +34,7 @@ func Create(req handler.Request, prevModel *Model, currentModel *Model) (handler
 
 // Read handles the Read event from the Cloudformation service.
 func Read(req handler.Request, prevModel *Model, currentModel *Model) (handler.ProgressEvent, error) {
+    log.Println("Attempting to read...",)
     // Add your code here:
     // * Make API calls (use req.Session)
     // * Mutate the model
@@ -55,6 +58,7 @@ func Read(req handler.Request, prevModel *Model, currentModel *Model) (handler.P
 
 // Update handles the Update event from the Cloudformation service.
 func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler.ProgressEvent, error) {
+	log.Println("Attempting to update...",)
     // Add your code here:
     // * Make API calls (use req.Session)
     // * Mutate the model
@@ -78,6 +82,7 @@ func Update(req handler.Request, prevModel *Model, currentModel *Model) (handler
 
 // Delete handles the Delete event from the Cloudformation service.
 func Delete(req handler.Request, prevModel *Model, currentModel *Model) (handler.ProgressEvent, error) {
+	log.Println("Attempting to delete...",)
     // Add your code here:
     // * Make API calls (use req.Session)
     // * Mutate the model
@@ -101,6 +106,7 @@ func Delete(req handler.Request, prevModel *Model, currentModel *Model) (handler
 
 // List handles the List event from the Cloudformation service.
 func List(req handler.Request, prevModel *Model, currentModel *Model) (handler.ProgressEvent, error) {
+	log.Println("Attempting to list...",)
     // Add your code here:
     // * Make API calls (use req.Session)
     // * Mutate the model
