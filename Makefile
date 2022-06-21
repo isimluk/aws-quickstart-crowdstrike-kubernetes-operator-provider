@@ -1,7 +1,7 @@
 .PHONY: build test clean
 
 build:
-	make -f makebuild  # this runs build steps required by the cfn cli
+	TAGS=logging make -f makebuild  # this runs build steps required by the cfn cli
 
 test:
 	cfn generate
